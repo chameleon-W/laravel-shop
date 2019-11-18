@@ -6,7 +6,7 @@
 ## Installing
 
 ```shell
-$ composer require chameleon-w//laravel-shop 
+$ composer require chameleon-w/laravel-shop 
 ```
 
 ## Usage
