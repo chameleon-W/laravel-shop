@@ -1,0 +1,17 @@
+{
+    "name": "chameleon-w\/laravel-shop",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chameleon-w",
+            "email": "chameleon_w@yeah.net"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ChameleonW\\LaravelShop\\": "src"
+        }
+    }
+}

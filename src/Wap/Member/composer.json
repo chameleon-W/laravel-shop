@@ -1,0 +1,17 @@
+{
+    "name": "chameleon-w\/laravel-shop-wap-member",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chameleon",
+            "email": "chameleon_w@yeah.net"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ChamemeonW\\LaravelShop\\Wap\\Member\\": ""
+        }
+    }
+}
