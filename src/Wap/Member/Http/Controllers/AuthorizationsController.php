@@ -25,6 +25,10 @@ class AuthorizationsController extends Controller
                 "image_head"    => $wechatUser->avatar
             ]);
         }
+        // 登入状态-改变
+        //改变用户的状态 设置为登入
+        Auth::guard('member')->login($user);
+        var_dump(Auth::guard('member')->check());
         return '通过';
     }
 
