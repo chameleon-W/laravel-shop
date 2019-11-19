@@ -2,7 +2,7 @@
     return [
         'auth' => [
             // 事先的动作,为了以后着想
-            'controller' =>  \ChamemeonW\LaravelShop\Wap\Member\Http\Controllers\AuthorizationsController::class,
+            'controller' =>  \ChameleonW\LaravelShop\Wap\Member\Http\Controllers\AuthorizationsController::class,
             // 当前使用的守卫,只是定义
             'guard' => 'member',
 
@@ -16,7 +16,7 @@
             'providers' => [
                 'member' => [
                     'driver' => 'eloquent',
-                    'model' => \ChamemeonW\LaravelShop\Wap\Member\Models\User::class
+                    'model' => \ChameleonW\LaravelShop\Wap\Member\Models\User::class
                 ],
             ],
         ],

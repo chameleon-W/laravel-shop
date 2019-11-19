@@ -6,7 +6,7 @@
 ## Installing
 
 ```shell
-$ composer require chamemeonw//laravel-shop-wap-member -vvv
+$ composer require chameleon-w//laravel-shop-wap-member -vvv
 ```
 
 ## Usage
