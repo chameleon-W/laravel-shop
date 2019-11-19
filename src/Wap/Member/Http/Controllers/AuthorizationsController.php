@@ -10,7 +10,7 @@ namespace ChameleonW\LaravelShop\Wap\Member\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use ChamemeonW\LaravelShop\Wap\Member\Models\User;
+use ChameleonW\LaravelShop\Wap\Member\Models\User;
 
 class AuthorizationsController extends Controller
 {
