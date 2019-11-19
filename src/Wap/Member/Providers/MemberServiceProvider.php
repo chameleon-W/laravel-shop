@@ -63,7 +63,7 @@ class MemberServiceProvider extends ServiceProvider{
         return [
             'namespace'  => 'ChameleonW\LaravelShop\Wap\Member\Http\Controllers',
             'prefix'     => 'wap/member',
-            'middlewate' => 'web',
+            'middleware' => 'web',
         ];
     }
 }

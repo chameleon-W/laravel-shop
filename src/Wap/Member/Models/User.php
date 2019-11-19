@@ -17,6 +17,6 @@ class User extends Authenticatable{
     protected $table = "sys_user";
 
     protected $fillable = [
-        'nickname', 'weixin_openid', 'image_head',
+        'nick_name', 'weixin_openid', 'image_head',
     ];
 }
