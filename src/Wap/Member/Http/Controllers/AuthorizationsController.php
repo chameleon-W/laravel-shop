@@ -6,7 +6,7 @@
  * Time: 10:55
  */
 
-namespace ChamemeonW\LaravelShop\Wap\Member\Http\Controllers;
+namespace ChameleonW\LaravelShop\Wap\Member\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

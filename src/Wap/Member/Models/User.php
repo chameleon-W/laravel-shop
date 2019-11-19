@@ -6,7 +6,7 @@
  * Time: 10:49
  */
 
-namespace ChamemeonW\LaravelShop\Wap\Member\Models;
+namespace ChameleonW\LaravelShop\Wap\Member\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;

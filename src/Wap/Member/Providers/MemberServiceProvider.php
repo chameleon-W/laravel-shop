@@ -6,7 +6,7 @@
  * Time: 10:50
  */
 
-namespace ChamemeonW\LaravelShop\Wap\Member\Providers;
+namespace ChameleonW\LaravelShop\Wap\Member\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;

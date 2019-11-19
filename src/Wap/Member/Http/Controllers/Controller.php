@@ -6,7 +6,7 @@
  * Time: 10:53
  */
 
-namespace ChamemeonW\LaravelShop\Wap\Member\Http\Controllers;
+namespace ChameleonW\LaravelShop\Wap\Member\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
