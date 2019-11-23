@@ -18,6 +18,10 @@ class MemberServiceProvider extends ServiceProvider{
         'wechat.oauth' => \Overtrue\LaravelWeChat\Middleware\OAuthAuthenticate::class,
     ];
 
+    protected $commands = [
+        \ChameleonW\LaravelShop\Wap\Member\Console\Commands\InstallCommand::class
+    ];
+
     protected $middlewareGroups = [];
 
     public function register()
@@ -27,15 +31,35 @@ class MemberServiceProvider extends ServiceProvider{
         //加载config配置文件
         $this->mergeConfigFrom(__DIR__."/../Config/member.php", 'wap.member');
         $this->registerRouteMiddleware();
+        $this->registerPublishing();
     }
 
     public function boot()
     {
         $this->loadMemberAuthConfig();
+        $this->loadMigrations();
+        $this->commands($this->commands);
+    }
+
+
+
+    public function loadMigrations()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->loadMigrationsFrom(__DIR__."/../Database/migrations");
+        }
+    }
+
+    public function registerPublishing()
+    {
+        if ($this->app->runningInConsole()) {
+            $this->publishes([__DIR__."/../Config"=>config_path('wap')],'laravel-shop-wap-member-config');
+        }
     }
 
     public function loadMemberAuthConfig()
     {
+        config(Arr::dot(config('wap.member.wechat', []), 'wechat.'));
         config(Arr::dot(config('wap.member.auth', []), 'auth.'));
     }
 
@@ -58,7 +82,6 @@ class MemberServiceProvider extends ServiceProvider{
     }
 
     public function routeConfiguration()
-
     {
         return [
             'namespace'  => 'ChameleonW\LaravelShop\Wap\Member\Http\Controllers',
