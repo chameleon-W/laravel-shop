@@ -17,10 +17,9 @@ class AuthorizationsController extends Controller
     public function wechatStore(Request $request) {
         $wechatUser = session('wechat.oauth_user.default');
         $user = User::where("weixin_openid", $wechatUser->id)->first();
-
         if (!$user) {
             $user = User::create([
-                "nickname"      => $wechatUser->name,
+                "nick_name"     => $wechatUser->name,
                 "weixin_openid" => $wechatUser->id,
                 "image_head"    => $wechatUser->avatar
             ]);
