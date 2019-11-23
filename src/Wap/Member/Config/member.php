@@ -3,9 +3,9 @@
         'wechat' => [
             'official_account' => [
                 'default' => [
-                    'app_id' => env('WECHAT_OFFICIAL_ACCOUNT_APPID', 'chameleonw-your-app-id'),         // AppID
-                    'secret' => env('WECHAT_OFFICIAL_ACCOUNT_SECRET', 'chameleonw-your-app-secret'),    // AppSecret
-                    'token' => env('WECHAT_OFFICIAL_ACCOUNT_TOKEN', 'chameleonw-your-token'),           // Token
+                    'app_id' => env('WECHAT_OFFICIAL_ACCOUNT_APPID', 'wx8c9066a7548026d2'),         // AppID
+                    'secret' => env('WECHAT_OFFICIAL_ACCOUNT_SECRET', 'e61367fe2974a3da4ee3134ae7555138'),    // AppSecret
+                    'token' => env('WECHAT_OFFICIAL_ACCOUNT_TOKEN', 'chameleon-w'),           // Token
                     'aes_key' => env('WECHAT_OFFICIAL_ACCOUNT_AES_KEY', ''),                 // EncodingAESKey
                     'oauth' => [
                         'scopes'   => array_map('trim', explode(',', env('WECHAT_OFFICIAL_ACCOUNT_OAUTH_SCOPES', 'snsapi_userinfo'))),

@@ -41,8 +41,6 @@ class MemberServiceProvider extends ServiceProvider{
         $this->commands($this->commands);
     }
 
-
-
     public function loadMigrations()
     {
         if ($this->app->runningInConsole()) {
