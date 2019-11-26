@@ -6,9 +6,8 @@
  * Time: 10:55
  */
 
-namespace ChameleonW\LaravelShop\Wap\Member\Http\Controllers;
+namespace ChameleonW\LaravelShop\Wap\Shop\Http\Controllers;
 
-use ChameleonW\LaravelShop\Wap\Member\Member;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use ChameleonW\LaravelShop\Wap\Member\Models\User;
@@ -27,10 +26,8 @@ class AuthorizationsController extends Controller
         }
         // 登入状态-改变
         //改变用户的状态 设置为登入
-//        Auth::guard('member')->login($user);
-//        var_dump(Auth::guard('member')->check());
-        Member::login($user);
-        var_dump(Member::check());
+        Auth::guard('member')->login($user);
+        var_dump(Auth::guard('member')->check());
         return '通过';
     }
 

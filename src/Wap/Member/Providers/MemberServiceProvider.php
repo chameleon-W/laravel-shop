@@ -11,6 +11,7 @@ namespace ChameleonW\LaravelShop\Wap\Member\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Arr;
+use EasyWeChat\OfficialAccount\Application as OfficialAccount;
 
 class MemberServiceProvider extends ServiceProvider{
     //member组件需要注入的中间件
@@ -39,6 +40,14 @@ class MemberServiceProvider extends ServiceProvider{
         $this->loadMemberAuthConfig();
         $this->loadMigrations();
         $this->commands($this->commands);
+        $this->app->singleton("wechat.official_account.default", function ($laravelApp) {
+            $app = new OfficialAccount(array_merge(config('wechat.official_account.default', []), config('wechat.official_account')));
+            if (config('wechat.defaults.use_laravel_cache')) {
+                $app['cache'] = $laravelApp['cache.store'];
+            }
+            $app['request'] = $laravelApp['request'];
+            return $app;
+        });
     }
 
     public function loadMigrations()

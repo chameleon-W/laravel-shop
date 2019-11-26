@@ -1,0 +1,19 @@
+{
+    "name": "chameleon-w\/laravel-shop-wap-shop",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chameleon",
+            "email": "chameleon_w@yeah.net"
+        }
+    ],
+    "require": {
+        "overtrue/laravel-wechat": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChameleonW\\LaravelShop\\Wap\\Shop\\": ""
+        }
+    }
+}
