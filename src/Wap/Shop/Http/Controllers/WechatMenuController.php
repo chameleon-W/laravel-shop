@@ -17,7 +17,7 @@ class WechatMenuController extends Controller
             [
                 "type" => "view",
                 "name" => "嘿！boy",
-                "url"  => "https://www.baidu.com"
+                "url"  => "http://chameleon-w.natapp1.cc/sixstar/laravel/public/wap/shop"
             ],
             [
                 "type" => "view",

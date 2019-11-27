@@ -17,10 +17,23 @@ class ShopServiceProvider extends ServiceProvider
     public function register()
     {
         $this->registerRoutes();
+        $this->registerPublishing();
     }
 
     public function boot(){
+        $this->loadViewsFrom(__DIR__."/../Resources/views","wap.shop");
+    }
 
+    public function registerPublishing(){
+        // 判断是否在命令行中运行
+        if ($this->app->runningInConsole()) {
+            $this->publishes(
+                [
+                    __DIR__.'/../Resources/assets' => public_path('vendor/chameleonW/laravel-wap-shop'),
+                ],
+                'laravel-shop-wap-shop'
+            );
+        }
     }
 
     public function registerRoutes(){

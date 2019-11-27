@@ -12,6 +12,9 @@
         "overtrue/laravel-wechat": "~5.0"
     },
     "autoload": {
+        "files": [
+            "src/Wap/Shop/Support/helpers.php"
+        ],
         "psr-4": {
             "ChameleonW\\LaravelShop\\Wap\\Shop\\": ""
         }
