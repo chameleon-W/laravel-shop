@@ -8,7 +8,7 @@
 
 if (! function_exists('shop_asset')) {
     function shop_asset($path, $secure=null) {
-        $path = "vendor/chameleon-w/laravel-wap-shop\\".$path;
+        $path = "vendor/chameleonW/laravel-wap-shop\\".$path;
         return asset($path, $secure);
     }
 }

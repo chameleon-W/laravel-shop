@@ -12,15 +12,15 @@
     <meta name="keywords" content="ChameleonW" />
     <meta name="description" content="ChameleonW"/>
     <link rel="shortcut  icon" type="image/x-icon" href="/template/wap/default/public/images/favicon.ico" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/pre_foot.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/pro-detail.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/showbox.css')}}">
-    <link rel="stylesheet" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/layer.css')}}" id="layuicss-skinlayercss">
-    <script src="{{asset('vendor/chameleonW/laravel-wap-shop/js/showbox.js')}}"></script>
-    <script src="{{asset('vendor/chameleonW/laravel-wap-shop/js/jquery.js')}}"></script>
-    <script type="text/javascript" src="{{asset('vendor/chameleonW/laravel-wap-shop/js/layer.js')}}"></script>
-    <script src="{{asset('vendor/chameleonW/laravel-wap-shop/js/load_task.js')}}" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="{{shop_asset('css/pre_foot.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{shop_asset('css/pro-detail.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{shop_asset('css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{shop_asset('css/showbox.css')}}">
+    <link rel="stylesheet" href="{{shop_asset('css/layer.css')}}" id="layuicss-skinlayercss">
+    <script src="{{shop_asset('js/showbox.js')}}"></script>
+    <script src="{{shop_asset('js/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{shop_asset('js/layer.js')}}"></script>
+    <script src="{{shop_asset('js/load_task.js')}}" type="text/javascript"></script>
     <script type="text/javascript">
         var CSS = "/template/wap/default/public/css";
         var APPMAIN='http://tp.23673.com/wap';
@@ -76,9 +76,9 @@
         .mask-layer-loading i,.mask-layer-loading img{text-align: center;color:#000000;font-size:50px;position: relative;top:50%;}
     </style>
 
-    <link rel="stylesheet" type="text/css" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/control_type.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/goods_list.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/group_buy.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{shop_asset('css/control_type.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{shop_asset('css/goods_list.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{shop_asset('css/group_buy.css')}}">
     <style type="text/css">
         .custom-search-button{top: 1px;}
         .sliding {overflow-y: auto;background: #ffffff;}
@@ -127,13 +127,13 @@
 
     <div class="code">
         <div style="overflow: hidden;">
-            <img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/1500630330.jpg')}}"  style="max-width: 100%;margin-top: 10px;"/>
+            <img src="{{shop_asset('picture/1500630330.jpg')}}"  style="max-width: 100%;margin-top: 10px;"/>
             <div style="color:#666; margin-bottom: 10px;">长按二维码关注公众微信</div>
         </div>
     </div>
 </div>
 <div class="motify" style="display: none;"><div class="motify-inner">弹出框提示</div></div>
-<script language="javascript" src="{{asset('vendor/chameleonW/laravel-wap-shop/js/jweixin-1.0.0.js')}}"> </script>
+<script language="javascript" src="{{shop_asset('js/jweixin-1.0.0.js')}}"> </script>
 <input type="hidden" id="appId" value="">
 <input type="hidden" id="jsTimesTamp" value="">
 <input type="hidden" id="jsNonceStr"  value="">
@@ -142,7 +142,7 @@
 
     <!-- 搜索 -->
     <div style="width: 100%;background-color: #fff;padding: 10px 0px;">
-        <script src="{{asset('vendor/chameleonW/laravel-wap-shop/js/public_assembly.js')}}"></script>
+        <script src="{{shop_asset('js/public_assembly.js')}}"></script>
         <style>
             /* .custom-search {width: 90%;margin-left: 20px;} */
             /* .custom-search .custom-search-input{width:97%;} */
@@ -163,13 +163,13 @@
         <style>.custom-search-button{top:0;}</style>
     </div>
     <!-- 轮播图 -->
-    <link rel="stylesheet" type="text/css" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/slick.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/components.css')}}">
-    <script src="{{asset('vendor/chameleonW/laravel-wap-shop/js/slick.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{shop_asset('css/slick.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{shop_asset('css/components.css')}}">
+    <script src="{{shop_asset('js/slick.js')}}"></script>
     <div class="slick">
         <div style="display:block;text-align:center;width:100%;height:175px;line-height:175px;">
             <a href="#">
-                <img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/1497070640.png')}}" alt="" style="height:175px;max-width:100%/* ;height:auto; */display: inline-block !important;vertical-align: middle !important;">
+                <img src="{{shop_asset('picture/1497070640.png')}}" alt="" style="height:175px;max-width:100%/* ;height:auto; */display: inline-block !important;vertical-align: middle !important;">
             </a>
         </div>
     </div>
@@ -184,8 +184,8 @@
     </script>
 
     <!-- 公告 -->
-    <link rel="stylesheet" type="text/css" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/limarquee.css')}}">
-    <script src="{{asset('vendor/chameleonW/laravel-wap-shop/js/jquery.limarquee.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{shop_asset('css/limarquee.css')}}">
+    <script src="{{shop_asset('js/jquery.limarquee.js')}}"></script>
     <style>
         .hot {
             width: 100%;
@@ -220,7 +220,7 @@
     </style>
     <div class="hot" style="position: relative; overflow: hidden;">
         <div class="notice-img">
-            <a href="javascript:;"><img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/ad.png')}}"></a>
+            <a href="javascript:;"><img src="{{shop_asset('picture/ad.png')}}"></a>
         </div>
         <div style="width:73%;overflow:hidden;font-size:12px;color: #666;">
             <div class="dowebok">
@@ -236,33 +236,33 @@
         });
     </script>
     <!-- 导航 -->
-    <link rel="stylesheet" type="text/css" href="{{asset('vendor/chameleonW/laravel-wap-shop/css/navi.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{shop_asset('css/navi.css')}}">
     <div class="navi">
         <div class="navi-item">
             <nav class="navi-item_row">
                 <a href="http://tp.23673.com/wap">
 				<span>
-					<img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/platform_nav_home1.png')}}"><span>首页</span>
+					<img src="{{shop_asset('picture/platform_nav_home1.png')}}"><span>首页</span>
 				</span>
                 </a>
                 <a href="http://tp.23673.com/wap/goods/integralcenter">
 				<span>
-					<img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/platform_nav_category1.png')}}"><span>积分中心</span>
+					<img src="{{shop_asset('picture/platform_nav_category1.png')}}"><span>积分中心</span>
 				</span>
                 </a>
                 <a href="http://tp.23673.com/wap/index/discount">
 				<span>
-					<img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/platform_nav_limit1.png')}}"><span>限时折扣</span>
+					<img src="{{shop_asset('picture/platform_nav_limit1.png')}}"><span>限时折扣</span>
 				</span>
                 </a>
                 <a href="http://tp.23673.com/wap/goods/brandlist">
 				<span>
-					<img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/platform_nav_joins1.png')}}"><span>品牌专区</span>
+					<img src="{{shop_asset('picture/platform_nav_joins1.png')}}"><span>品牌专区</span>
 				</span>
                 </a>
                 <a href="http://tp.23673.com/wap/member/index">
 				<span>
-					<img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/platform_nav_member1.png')}}"><span>会员中心</span>
+					<img src="{{shop_asset('picture/platform_nav_member1.png')}}"><span>会员中心</span>
 				</span>
                 </a>
 
@@ -271,7 +271,7 @@
     </div>
     <!-- 优惠券领取 -->
     <div class="controltype">
-        <img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/hotsale.png')}}"/>
+        <img src="{{shop_asset('picture/hotsale.png')}}"/>
         <span class="control_l_content" style="color:#16D810;">清凉一夏</span>
         <!-- 		<img src="../../static/picture/top_selling.png"> -->
     </div>
@@ -280,7 +280,7 @@
             <li class="gooditem">
                 <div class="imgs">
                     <a href="http://tp.23673.com/wap/goods/goodsdetail?id=380">
-                        <img class="lazy" src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/1500547407503.jpg')}}" style="max-width:100%;">
+                        <img class="lazy" src="{{shop_asset('picture/1500547407503.jpg')}}" style="max-width:100%;">
                     </a>
                 </div>
                 <div class="info">
@@ -292,7 +292,7 @@
             <li class="gooditem">
                 <div class="imgs">
                     <a href="http://tp.23673.com/wap/goods/goodsdetail?id=382">
-                        <img class="lazy" src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/1500600767633.jpg')}}" style="max-width:100%;">
+                        <img class="lazy" src="{{shop_asset('picture/1500600767633.jpg')}}" style="max-width:100%;">
                     </a>
                 </div>
                 <div class="info">
@@ -304,7 +304,7 @@
             <li class="gooditem">
                 <div class="imgs">
                     <a href="http://tp.23673.com/wap/goods/goodsdetail?id=381">
-                        <img class="lazy" src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/1500600673623.jpg')}}" style="max-width:100%;">
+                        <img class="lazy" src="{{shop_asset('picture/1500600673623.jpg')}}" style="max-width:100%;">
                     </a>
                 </div>
                 <div class="info">
@@ -316,7 +316,7 @@
             <li class="gooditem">
                 <div class="imgs">
                     <a href="http://tp.23673.com/wap/goods/goodsdetail?id=383">
-                        <img class="lazy" src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/1500601152703.jpg')}}" style="max-width:100%;">
+                        <img class="lazy" src="{{shop_asset('picture/1500601152703.jpg')}}" style="max-width:100%;">
                     </a>
                 </div>
                 <div class="info">
@@ -343,7 +343,7 @@
         <dd id="buttom_home">
             <a href="http://tp.23673.com/wap">
                 <div class="nav-b5-relative">
-                    <img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/home_check.png')}}"/>
+                    <img src="{{shop_asset('picture/home_check.png')}}"/>
                     <span>首页</span>
                 </div>
             </a>
@@ -351,7 +351,7 @@
         <dd id="buttom_classify">
             <a href="http://tp.23673.com/wap/goods/goodsClassificationList">
                 <div class="nav-b5-relative">
-                    <img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/classify_uncheck.png')}}"/>
+                    <img src="{{shop_asset('picture/classify_uncheck.png')}}"/>
                     <span>分类</span>
                 </div>
             </a>
@@ -359,7 +359,7 @@
         <dd id="buttom_stroe" >
             <a href="http://tp.23673.com/wap/index/shopstreet">
                 <div class="nav-b5-relative">
-                    <img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/store_uncheck.png')}}"/>
+                    <img src="{{shop_asset('picture/store_uncheck.png')}}"/>
                     <span>店铺街</span>
                 </div>
             </a>
@@ -367,7 +367,7 @@
         <dd id="bottom_cart" >
             <a href="http://tp.23673.com/wap/goods/cart">
                 <div class="nav-b5-relative">
-                    <img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/cart_uncheck.png')}}"/>
+                    <img src="{{shop_asset('picture/cart_uncheck.png')}}"/>
                     <span>购物车</span>
                 </div>
             </a>
@@ -375,7 +375,7 @@
         <dd id="bottom_member" >
             <a href="http://tp.23673.com/wap/Member/index">
                 <div class="nav-b5-relative">
-                    <img src=".{{asset('vendor/chameleonW/laravel-wap-shop/picture/user_uncheck.png')}}"/>
+                    <img src=".{{shop_asset('picture/user_uncheck.png')}}"/>
                     <span>会员中心</span>
                 </div>
             </a>
@@ -384,7 +384,7 @@
 </div>
 <!-- 加载弹出层 -->
 <div class="mask-layer-loading">
-    <img src="{{asset('vendor/chameleonW/laravel-wap-shop/picture/mask_load.gif')}}"/>
+    <img src="{{shop_asset('picture/mask_load.gif')}}"/>
 </div>
 <script>
     $(function(){
